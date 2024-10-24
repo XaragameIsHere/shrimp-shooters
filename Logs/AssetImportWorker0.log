@@ -3830,3 +3830,13 @@ Start importing Assets/Scripts/shrimpThrower.cs using Guid(437f8e026bc1e4edfa256
  -> (artifact id: '407362b129289e34d66de5b3037c4d31') in 0.182473 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8346.641613 seconds.
+  path: Assets/Materials/Shrimp.mat
+  artifactKey: Guid(82ed76540a36f461bb3a12c19791e05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Shrimp.mat using Guid(82ed76540a36f461bb3a12c19791e05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '221d03c0576783782fda4a160be2ad2d') in 0.692726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
