@@ -308,6 +308,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1213360705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1213360707}
+  - component: {fileID: 1213360706}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1213360706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213360705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f8e026bc1e4edfa256d62d7da20b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shrimp: {fileID: 9037544899152067466, guid: e2267d06633ee314a8629284e3f194b9, type: 3}
+  spawnPointRight: {fileID: 1246602288}
+  spawnPointLeft: {fileID: 1610948272}
+  jsonFile: {fileID: 4900000, guid: f54272fc7f5e46946a81079d54bdaa57, type: 3}
+  beatsRoot:
+    Start: []
+--- !u!4 &1213360707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213360705}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -5.01, z: 9.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1246602286
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,27 +367,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1246602288}
-  - component: {fileID: 1246602287}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: rightSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1246602287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246602286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f8e026bc1e4edfa256d62d7da20b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shrimp: {fileID: 9037544899152067466, guid: e2267d06633ee314a8629284e3f194b9, type: 3}
 --- !u!4 &1246602288
 Transform:
   m_ObjectHideFlags: 0
@@ -347,7 +383,7 @@ Transform:
   m_GameObject: {fileID: 1246602286}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: -5.01, z: 9.33}
+  m_LocalPosition: {x: 10, y: -5.01, z: 9.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -480,9 +516,40 @@ MonoBehaviour:
   enemy:
     serializedVersion: 2
     m_Bits: 8
-  spawner: {fileID: 1246602287}
+  spawner: {fileID: 1213360706}
   weaponRange: 10000
   crosshair: {fileID: 2800000, guid: a7b8da322aa9d154f9d2873d1b04f826, type: 3}
+--- !u!1 &1610948271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1610948272}
+  m_Layer: 0
+  m_Name: leftSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1610948272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610948271}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10, y: -5.01, z: 9.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1968334833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -567,4 +634,6 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 1416494588}
   - {fileID: 1246602288}
+  - {fileID: 1610948272}
+  - {fileID: 1213360707}
   - {fileID: 1968334833}

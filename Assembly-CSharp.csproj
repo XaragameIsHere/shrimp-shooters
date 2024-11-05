@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\gunControl.cs" />
     <Compile Include="Assets\Scripts\shrimpThrower.cs" />
+    <Compile Include="Assets\Scripts\interfaceComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

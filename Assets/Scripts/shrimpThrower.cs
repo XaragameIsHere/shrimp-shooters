@@ -3,30 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class shrimpThrower : MonoBehaviour
-{
+{ 
     [SerializeField] GameObject shrimp;
+    [SerializeField] Transform spawnPointRight;
+    [SerializeField] Transform spawnPointLeft;
+    [SerializeField] TextAsset jsonFile;
+    [HideInInspector] public beatProcessing.Beats beatsRoot;
+
+    int bpm = 150;
     private List<GameObject> shrimpList = new List<GameObject>();
 
     // Start is called before the first frame update
-    IEnumerator spawn()
+    
+    IEnumerator beat(float beatTime, float speed, bool side)
     {
-        for (int i = 0; i < 10; i++)
+        var beatCount = Mathf.CeilToInt(bpm * (beatTime / 60));
+
+        
+
+        for (int i = 0;i < beatCount;i++)
         {
             var newShrimp = Instantiate(shrimp);
+            var dir = 1;
             shrimpList.Add(newShrimp);
-            newShrimp.transform.position = transform.position;
+
+            if (side)
+            {
+                newShrimp.transform.position = spawnPointRight.position;
+                dir = -1;
+            }
+            else
+            {
+                newShrimp.transform.position = spawnPointLeft.position;
+                dir = 1;
+            }
+
             newShrimp.transform.localEulerAngles = new Vector3(0, 90, 0);
-            var rb = newShrimp.gameObject.AddComponent<Rigidbody>();
+            var rb = newShrimp.gameObject.GetComponent<Rigidbody>();
             rb.AddTorque(new Vector3(Random.Range(-60, 60), Random.Range(-60, 60), Random.Range(-60, 60)));
-            rb.AddForce(new Vector3(Random.Range(-200, 200), 650));
-            yield return new WaitForSeconds(Random.Range(.25f, .75f));
-        }
-
-        yield return new WaitForSeconds(3);
-
-        foreach (var item in shrimpList)
-        {
-            Destroy(item.gameObject);
+            rb.AddForce(new Vector3(Random.Range(dir * 200, dir * 150), 650));
+            yield return new WaitForSeconds(beatTime/beatCount);
         }
     }
 
@@ -35,14 +51,21 @@ public class shrimpThrower : MonoBehaviour
         Destroy(shrimp);
     }
 
-    void Start()
+    IEnumerator processBeats()
     {
-        StartCoroutine(spawn());
+        foreach (beatProcessing.beat data in beatsRoot.Start)
+        {
+            print(data.beatMoment);
+            yield return new WaitUntil(() => Time.fixedTime >= data.beatMoment);
+            StartCoroutine(beat(data.beatTime, data.beatSpeed, data.side));
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        beatsRoot = JsonUtility.FromJson<beatProcessing.Beats>(jsonFile.text);
+        StartCoroutine(processBeats());
+
     }
+
 }

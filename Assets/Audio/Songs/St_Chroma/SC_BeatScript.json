@@ -1,0 +1,61 @@
+
+{
+    "Start":
+    [
+        
+        {
+            "beatMoment": 2,
+            "beatTime": 0.25,
+            "beatSpeed": 1,
+            "side": true
+        },
+        {
+            "beatMoment": 3,
+            "beatTime": 1,
+            "beatSpeed": 1,
+            "side": false
+        },
+        {
+            "beatMoment": 4,
+            "beatTime": 1.5,
+            "beatSpeed": 1,
+            "side": true
+        },
+        {
+            "beatMoment": 5,
+            "beatTime": 0.75,
+            "beatSpeed": 3,
+            "side": true
+        },
+        {
+            "beatMoment": 5.5,
+            "beatTime": 0.25,
+            "beatSpeed": 1,
+            "side": true
+        },
+        {
+            "beatMoment": 6,
+            "beatTime": 1,
+            "beatSpeed": 1,
+            "side": false
+        }, 
+        {
+            "beatMoment": 7,
+            "beatTime": 0.25,
+            "beatSpeed": 1,
+            "side": true
+        },
+        {
+            "beatMoment": 7.5,
+            "beatTime": 0.75,
+            "beatSpeed": 3,
+            "side": true
+        },
+        {
+            "beatMoment": 8,
+            "beatTime": 0.75,
+            "beatSpeed": 3,
+            "side": false
+        }
+    ]
+}
