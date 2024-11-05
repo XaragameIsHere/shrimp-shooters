@@ -17,6 +17,7 @@ public class shrimpThrower : MonoBehaviour
             newShrimp.transform.position = transform.position;
             newShrimp.transform.localEulerAngles = new Vector3(0, 90, 0);
             var rb = newShrimp.gameObject.AddComponent<Rigidbody>();
+            rb.AddTorque(new Vector3(Random.Range(-60, 60), Random.Range(-60, 60), Random.Range(-60, 60)));
             rb.AddForce(new Vector3(Random.Range(-200, 200), 650));
             yield return new WaitForSeconds(Random.Range(.25f, .75f));
         }
