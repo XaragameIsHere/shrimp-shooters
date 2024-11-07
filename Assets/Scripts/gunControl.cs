@@ -34,7 +34,7 @@ public class gunControl : MonoBehaviour
         //float inputY = Input.GetAxis("Mouse Y") * cameraSensitivity;
         transform.localEulerAngles = new Vector3(11, (inputX * 180)+90, 0);
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1"))
             shoot();
     }
 }
