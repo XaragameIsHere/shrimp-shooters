@@ -13,7 +13,7 @@ public class beatProcessing
         public float beatMoment;
         public float beatTime;
         public float beatSpeed;
-        public bool side;
+        public string side;
     }
 
     [System.Serializable]

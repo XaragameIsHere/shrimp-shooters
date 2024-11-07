@@ -4,58 +4,222 @@
     [
         
         {
-            "beatMoment": 2,
+            "beatMoment": 0.5,
             "beatTime": 0.25,
-            "beatSpeed": 1,
-            "side": true
+            "beatSpeed": 0.4,
+            "side": "left"
         },
         {
-            "beatMoment": 3,
-            "beatTime": 1,
-            "beatSpeed": 1,
-            "side": false
+            "beatMoment": 0.75,
+            "beatTime": 0.25,
+            "beatSpeed": 0.4,
+            "side": "right"
+        },
+        {
+            "beatMoment": 1.05,
+            "beatTime": 1.25,
+            "beatSpeed": 0.7,
+            "side": "mid"
+        },
+        {
+            "beatMoment": 2.5,
+            "beatTime": 0.25,
+            "beatSpeed": 0.8,
+            "side": "right"
+        },
+        {
+            "beatMoment": 2.6,
+            "beatTime": 0.25,
+            "beatSpeed": 0.8,
+            "side": "left"
+        },
+        {
+            "beatMoment": 2.7,
+            "beatTime": 0.25,
+            "beatSpeed": 0.8,
+            "side": "right"
+        },
+        
+        
+        
+        {
+            "beatMoment": 3.5,
+            "beatTime": 0.25,
+            "beatSpeed": 0.4,
+            "side": "left"
         },
         {
             "beatMoment": 4,
-            "beatTime": 1.5,
-            "beatSpeed": 1,
-            "side": true
-        },
-        {
-            "beatMoment": 5,
-            "beatTime": 0.75,
-            "beatSpeed": 3,
-            "side": true
-        },
-        {
-            "beatMoment": 5.5,
             "beatTime": 0.25,
-            "beatSpeed": 1,
-            "side": true
+            "beatSpeed": 0.4,
+            "side": "right"
+        },
+        {
+            "beatMoment": 4.55,
+            "beatTime": 1.25,
+            "beatSpeed": 0.7,
+            "side": "mid"
+        },
+        {
+            "beatMoment": 5.8,
+            "beatTime": 0.25,
+            "beatSpeed": 0.8,
+            "side": "right"
+        },
+        {
+            "beatMoment": 5.9,
+            "beatTime": 0.25,
+            "beatSpeed": 0.8,
+            "side": "left"
         },
         {
             "beatMoment": 6,
-            "beatTime": 1,
-            "beatSpeed": 1,
-            "side": false
-        }, 
-        {
-            "beatMoment": 7,
             "beatTime": 0.25,
-            "beatSpeed": 1,
-            "side": true
+            "beatSpeed": 0.8,
+            "side": "right"
+        },
+        
+        
+        
+        {
+            "beatMoment": 6.6,
+            "beatTime": 0.25,
+            "beatSpeed": 0.4,
+            "side": "left"
         },
         {
-            "beatMoment": 7.5,
-            "beatTime": 0.75,
-            "beatSpeed": 3,
-            "side": true
+            "beatMoment": 7.3,
+            "beatTime": 0.25,
+            "beatSpeed": 0.4,
+            "side": "right"
         },
         {
-            "beatMoment": 8,
-            "beatTime": 0.75,
-            "beatSpeed": 3,
-            "side": false
+            "beatMoment": 7.65,
+            "beatTime": 1.25,
+            "beatSpeed": 0.7,
+            "side": "mid"
+        },
+        {
+            "beatMoment": 9.1,
+            "beatTime": 0.25,
+            "beatSpeed": 0.8,
+            "side": "right"
+        },
+        {
+            "beatMoment": 9.2,
+            "beatTime": 0.25,
+            "beatSpeed": 0.8,
+            "side": "left"
+        },
+        {
+            "beatMoment": 9.3,
+            "beatTime": 0.25,
+            "beatSpeed": 0.8,
+            "side": "right"
+        },
+        
+        
+        
+        
+        {
+            "beatMoment": 9.825,
+            "beatTime": 0.25,
+            "beatSpeed": 0.4,
+            "side": "left"
+        },
+        {
+            "beatMoment": 10.1,
+            "beatTime": 0.25,
+            "beatSpeed": 0.4,
+            "side": "right"
+        },
+        {
+            "beatMoment": 10.375,
+            "beatTime": 1.25,
+            "beatSpeed": 0.7,
+            "side": "mid"
+        },
+        {
+            "beatMoment": 11.825,
+            "beatTime": 0.25,
+            "beatSpeed": 0.8,
+            "side": "right"
+        },
+        {
+            "beatMoment": 11.925,
+            "beatTime": 0.25,
+            "beatSpeed": 0.8,
+            "side": "left"
+        },
+        {
+            "beatMoment": 12.025,
+            "beatTime": 0.25,
+            "beatSpeed": 0.8,
+            "side": "right"
+        },
+        
+        
+        
+        
+        {
+            "beatMoment": 13,
+            "beatTime": 0.25,
+            "beatSpeed": 0.4,
+            "side": "left"
+        },
+        {
+            "beatMoment": 13.25,
+            "beatTime": 0.25,
+            "beatSpeed": 0.4,
+            "side": "right"
+        },
+        {
+            "beatMoment": 13.525,
+            "beatTime": 1.25,
+            "beatSpeed": 0.7,
+            "side": "mid"
+        },
+        
+        
+        
+        
+        {
+            "beatMoment": 14.5,
+            "beatTime": 0.25,
+            "beatSpeed": 0.6,
+            "side": "right"
+        },
+        {
+            "beatMoment": 14.6,
+            "beatTime": 0.25,
+            "beatSpeed": 0.6,
+            "side": "right"
+        },
+        
+        {
+            "beatMoment": 15,
+            "beatTime": 0.25,
+            "beatSpeed": 0.6,
+            "side": "left"
+        },
+        {
+            "beatMoment": 15.1,
+            "beatTime": 0.25,
+            "beatSpeed": 0.6,
+            "side": "left"
+        },
+        
+        {
+            "beatMoment": 15.5,
+            "beatTime": 0.25,
+            "beatSpeed": 0.6,
+            "side": "right"
+        },
+        {
+            "beatMoment": 15.6,
+            "beatTime": 0.25,
+            "beatSpeed": 0.6,
+            "side": "right"
         }
     ]
 }

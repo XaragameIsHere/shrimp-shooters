@@ -6,6 +6,7 @@ public class shrimpThrower : MonoBehaviour
 { 
     [SerializeField] GameObject shrimp;
     [SerializeField] Transform spawnPointRight;
+    [SerializeField] Transform spawnPointMid;
     [SerializeField] Transform spawnPointLeft;
     [SerializeField] TextAsset jsonFile;
     [HideInInspector] public beatProcessing.Beats beatsRoot;
@@ -15,7 +16,13 @@ public class shrimpThrower : MonoBehaviour
 
     // Start is called before the first frame update
     
-    IEnumerator beat(float beatTime, float speed, bool side)
+    IEnumerator midDelete(GameObject srimp)
+    {
+        yield return new WaitForSeconds(1.5f);
+        Destroy(srimp);
+    }
+
+    IEnumerator beat(float beatTime, float speed, string side)
     {
         var beatCount = Mathf.CeilToInt(bpm * (beatTime / 60));
 
@@ -27,21 +34,27 @@ public class shrimpThrower : MonoBehaviour
             var dir = 1;
             shrimpList.Add(newShrimp);
 
-            if (side)
+            if (side == "left")
+            {
+                newShrimp.transform.position = spawnPointLeft.position;
+                dir = 1;
+            }
+            else if (side == "right") 
             {
                 newShrimp.transform.position = spawnPointRight.position;
                 dir = -1;
             }
-            else
+            else if (side == "mid")
             {
-                newShrimp.transform.position = spawnPointLeft.position;
-                dir = 1;
+                newShrimp.transform.position = spawnPointMid.position;
+                dir = 0;
+                StartCoroutine(midDelete(newShrimp));
             }
 
             newShrimp.transform.localEulerAngles = new Vector3(0, 90, 0);
             var rb = newShrimp.gameObject.GetComponent<Rigidbody>();
             rb.AddTorque(new Vector3(Random.Range(-60, 60), Random.Range(-60, 60), Random.Range(-60, 60)));
-            rb.AddForce(new Vector3(Random.Range(dir * 200, dir * 150), 650));
+            rb.AddForce(new Vector3(Random.Range(dir * 400, dir * 300) * speed, 1500 * speed));
             yield return new WaitForSeconds(beatTime/beatCount);
         }
     }
