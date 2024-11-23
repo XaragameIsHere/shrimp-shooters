@@ -1,0 +1,12 @@
+
+{
+    "Start":
+    [
+        {
+            "beatMoment": 0.5,
+            "beatTime": 0.25,
+            "beatSpeed": 0.4,
+            "side": "left"
+        }
+    ]
+}
