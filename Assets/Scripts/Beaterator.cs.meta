@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4c79c57f47e9e4a9490d1a69863fa61d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - shrimpModel: {fileID: 9037544899152067466, guid: e2267d06633ee314a8629284e3f194b9, type: 3}
+  - positionStartLeft: {instanceID: 0}
+  - positionStartRight: {instanceID: 0}
+  - positionStartMiddle: {instanceID: 0}
+  - positionEndLeft: {instanceID: 0}
+  - positionEndRight: {instanceID: 0}
+  - positionEndMiddle: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
