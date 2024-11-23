@@ -1,8 +1,10 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Ll]ogs/
-[Bb]uilds/
+Library/
+Temp/
+Obj/
+Logs/
+Builds/
+UserSettings/
+
 Assets/AssetStoreTools*
 
 # Visual Studio cache directory
@@ -39,8 +41,3 @@ sysinfo.txt
 /UserSettings/Layouts/default-2022.dwlt
 
 
-/Library
-/Library
-Library/Search/transactions.db
-Library/Search/transactions.db
-Library/Search/transactions.db
