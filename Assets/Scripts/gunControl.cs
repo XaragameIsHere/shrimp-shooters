@@ -4,7 +4,9 @@ public class gunControl : MonoBehaviour
 {
     [SerializeField] Camera playerCamera;
     [SerializeField] LayerMask enemy;
+    [SerializeField] LayerMask backgroundLayer;
     [SerializeField] float weaponRange = 10000;
+    [SerializeField] GameObject particleBox;
     float cameraSensitivity = 2;
     [SerializeField] Texture2D crosshair;
     private float timePressed = 0.0f;
@@ -42,9 +44,14 @@ public class gunControl : MonoBehaviour
                 //if (timePressed > timeDelayThreshold) { // Is the time pressed greater than our time delay threshold?
                     RaycastHit hit;
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    
                     if (Physics.Raycast(ray, out hit, weaponRange, enemy))
                     {
                         hit.transform.gameObject.GetComponent<shrimpBeat>().held = true;
+                    }
+                    else if (Physics.Raycast(ray, out hit, weaponRange, backgroundLayer))
+                    {
+                        particleBox.transform.position = hit.point + new Vector3(0, 0, -10);
                     }
                 //}
             }

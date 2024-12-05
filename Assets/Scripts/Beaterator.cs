@@ -8,7 +8,10 @@ using Unity.VisualScripting;
 
 public class Beaterator : MonoBehaviour
 {
+    [HideInInspector] public beatProcessing.Beats beatsRoot;
+    
     [SerializeField] Camera _mainCamera;
+    [SerializeField] ParticleSystem _Particles;
     
     //models
     [Header("Models")]
@@ -135,25 +138,86 @@ public class Beaterator : MonoBehaviour
         
     }
 
-    
+    public void bounce(string side, float speed)
+    {
+        var enumStartPosition = Enum.Parse(typeof(Positions), side);
+        float dir = 0;
+        float downDir = 0;
+        
+        var ShrimpObject = Instantiate(shrimpModel);
+        
+        switch (enumStartPosition)
+        {
+            case Positions.Left:
+                ShrimpObject.transform.position = positionStartLeft.position;
+                dir = 1;
+                downDir = 1;
+                break;
+            case Positions.Middle:
+                ShrimpObject.transform.position = positionStartMiddle.position;
+                dir = 0;
+                downDir = -1;
+                break;
+            case Positions.Right:
+                ShrimpObject.transform.position = positionStartRight.position;
+                dir = -1;
+                downDir = 1;
+                break;
+        }
+        
+        ShrimpObject.AddComponent<Bounce>().Go(dir, speed, downDir);
+    }
     
     public void tweenOff(float speed, String side, float beatTime)
     {
-        
-
         StartCoroutine(multiMove(side, speed, beatTime));
+    }
+
+    public void explosion()
+    {
+        _Particles.Emit(10);
     }
     
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             tweenOff(.7f, "Left", .5f);
         }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            tweenOff(.7f, "Middle", .5f);
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            tweenOff(.7f, "Right", .5f);
+        }
         
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Hold(1.5f, .75f, .4f, "Left");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Hold(1.5f, .75f, .4f, "Right");
+        }
+        
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            bounce( "Left", 2);
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            bounce( "Middle", 2);
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            bounce( "Right", 2);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            explosion(); 
         }
     }
 }

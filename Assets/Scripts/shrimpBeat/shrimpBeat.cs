@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -9,12 +10,12 @@ public class shrimpBeat : MonoBehaviour
     public bool held;
     public Tween mainTween;
 
+    
     public enum beatTypes
     {
-        Hold,
-        dropDown,
-        tweenOff,
-        bounce,
+        Hold,//
+        tweenOff,//
+        bounce,//
         clearScreen,
         explosion
     }
@@ -26,6 +27,11 @@ public class shrimpBeat : MonoBehaviour
         ShrimpPhys = gameObject.GetComponent<Rigidbody>();
         ShrimpCollider = gameObject.GetComponent<Collider>();
         Explosion = gameObject.GetComponent<ParticleSystem>();
+    }
+
+    public virtual void OnParticleTrigger()
+    {
+        
     }
 
     public virtual void FixedUpdate()

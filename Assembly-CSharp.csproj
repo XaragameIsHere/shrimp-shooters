@@ -46,9 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/gunControl.cs" />
+    <Compile Include="Assets/Scripts/shrimpBeat/Explosion.cs" />
     <Compile Include="Assets/Scripts/Beaterator.cs" />
+    <Compile Include="Assets/Scripts/shrimpBeat/Bounce.cs" />
     <Compile Include="Assets/Scripts/shrimpBeat/shrimpBeat.cs" />
     <Compile Include="Assets/Scripts/shrimpThrower.cs" />
+    <Compile Include="Assets/Scripts/shrimpBeat/NewPlayableAsset.cs" />
     <Compile Include="Assets/Scripts/shrimpBeat/tweenOff.cs" />
     <Compile Include="Assets/Scripts/shrimpBeat/Hold.cs" />
     <Compile Include="Assets/Scripts/interfaceComponent.cs" />

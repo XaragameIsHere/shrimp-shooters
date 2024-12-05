@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e464905687dd04a86af511621f5c4ba4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ShrimpPhys: {instanceID: 0}
+  - ShrimpCollider: {instanceID: 0}
+  - Explosion: {instanceID: 0}
+  - image: {fileID: 4283137043611213189, guid: 206c489147395427494a20c7a9cfdfc5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
