@@ -3,10 +3,236 @@
     "Start":
     [
         {
-            "beatMoment": 0.5,
-            "beatTime": 0.25,
+            
+            "type": "Bounce",
+            "beatMoment": 0.198,
+            "beatSpeed": 2,
+            "side": "Left"
+                        
+        },
+        {
+
+            "type": "Bounce",
+            "beatMoment": 0.7,
+            "beatSpeed": 2,
+            "side": "Right"
+
+        },
+        {
+
+            "type": "tweenOff",
+            "beatMoment": 1.081,
+            "beatSpeed": 0.8,
+            "beatTime" : 1.446,
+            "side": "Left"
+
+        },
+        {
+
+            "type": "tweenOff",
+            "beatMoment": 2.513,
+            "beatSpeed": 0.8,
+            "beatTime" : 0.3,
+            "side": "Right"
+
+        },
+
+        {
+
+            "type": "Log",
+            "beatMoment": 3.487,
+            "message": "Chromakooooopppiaaaa"
+
+        },
+        
+        {
+
+            "type": "Bounce",
+            "beatMoment": 3.487,
+            "beatSpeed": 2,
+            "side": "Right"
+
+        },
+        {
+
+            "type": "Bounce",
+            "beatMoment": 3.883,
+            "beatSpeed": 2,
+            "side": "Left"   
+
+        },
+        {
+
+            "type": "tweenOff",
+            "beatMoment": 4.263,
+            "beatSpeed": 0.8,
+            "beatTime" : 1.431,
+            "side": "Right"
+
+        },
+        {
+
+            "type": "tweenOff",
+            "beatMoment": 5.694,
+            "beatSpeed": 0.8,
+            "beatTime" : 0.3,
+            "side": "Left"
+
+        },
+
+        {
+
+            "type": "Log",
+            "beatMoment": 6.676,
+            "message": "Chromakooooopppiaaaa"
+
+        },
+
+        {
+
+            "type": "Bounce",
+            "beatMoment": 6.676 ,
+            "beatSpeed": 2,
+            "side": "Left"
+
+        },
+        {
+
+            "type": "Bounce",
+            "beatMoment": 7.103,
+            "beatSpeed": 2,
+            "side": "Right"
+
+        },
+        {
+
+            "type": "tweenOff",
+            "beatMoment": 7.481,
+            "beatSpeed": 0.8,
+            "beatTime" : 1.431,
+            "side": "Left"
+
+        },
+        {
+
+            "type": "tweenOff",
+            "beatMoment": 8.977,
+            "beatSpeed": 0.8,
+            "beatTime" : 0.3,
+            "side": "Right"
+
+        },
+
+        {
+
+            "type": "Log",
+            "beatMoment": 9.816,
+            "message": "Chromakooooopppiaaaa"
+
+        },
+
+        {
+
+            "type": "Bounce",
+            "beatMoment": 9.816  ,
+            "beatSpeed": 2,
+            "side": "Right"
+
+        },
+        {
+
+            "type": "Bounce",
+            "beatMoment": 10.326,
+            "beatSpeed": 2,
+            "side": "Left"
+
+        },
+        {
+
+            "type": "tweenOff",
+            "beatMoment": 10.589,
+            "beatSpeed": 0.8,
+            "beatTime" : 1.531,
+            "side": "Right"
+
+        },
+        {
+
+            "type": "tweenOff",
+            "beatMoment": 12.134,
+            "beatSpeed": 0.8,
+            "beatTime" : 0.3,
+            "side": "Left"
+
+        },
+
+        {
+
+            "type": "Log",
+            "beatMoment": 13.170,
+            "message": "Chromakoooo- "
+
+        },
+        
+        {
+
+            "type": "Bounce",
+            "beatMoment": 13.170  ,
+            "beatSpeed": 2,
+            "side": "Left"
+
+        },
+        {
+
+            "type": "Bounce",
+            "beatMoment": 13.433,
+            "beatSpeed": 2,
+            "side": "Right"
+
+        },
+        {
+
+            "type": "tweenOff",
+            "beatMoment": 13.828,
+            "beatSpeed": 0.8,
+            "beatTime" : 0.477,
+            "side": "Left"
+
+        },
+        {
+
+            "type": "clearScreen",
+            "beatMoment": 14.305
+
+        },
+
+        {
+
+            "type": "Log",
+            "beatMoment": 13.170,
+            "message": "Calm Down... Sit Still"
+
+        },
+
+        {
+
+            "type": "Hold",
+            "beatMoment": 14.148,
             "beatSpeed": 0.4,
-            "side": "left"
+            "holdTime": 0.809,
+            "pressTime": 0.4,
+            "side": "Left"
+
+        },
+        {
+
+            "type": "Hold",
+            "beatMoment": 14.923,
+            "beatSpeed": 0.4,
+            "holdTime": 0.809,
+            "pressTime": 0.4,
+            "side": "Right"
+
         }
     ]
 }

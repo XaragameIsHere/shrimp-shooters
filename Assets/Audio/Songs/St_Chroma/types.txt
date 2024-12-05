@@ -1,0 +1,52 @@
+{
+            
+    "type": "Bounce",
+    "beatMoment": 0.198,
+    "beatSpeed": 0.4,
+    "side": "Left"
+                
+}
+
+{
+            
+    "type": "Hold",
+    "beatMoment": 0.198,
+    "beatSpeed": 0.4,
+    "holdTime": 1.5,
+    "pressTime": 0.75,
+    "side": "Left"
+                
+}
+
+{
+            
+    "type": "explosion",
+    "beatMoment": 0.198,
+    "beatSpeed": 0.4,
+                
+}
+
+{
+            
+    "type": "tweenOff",
+    "beatMoment": 0.198,
+    "beatSpeed": 0.5,
+    "beatTime" : 0.5,
+    "side": "Left"
+                
+}
+
+{
+            
+    "type": "Log",
+    "beatMoment": 0.198,
+    "message": "Message"
+                
+}
+
+{
+            
+    "type": "clearScreen",
+    "beatMoment": 0.198
+                
+}

@@ -15,9 +15,10 @@ public class shrimpBeat : MonoBehaviour
     {
         Hold,//
         tweenOff,//
-        bounce,//
+        Bounce,//
         clearScreen,
-        explosion
+        Log,
+        Explosion
     }
 
     public beatTypes BeatType;

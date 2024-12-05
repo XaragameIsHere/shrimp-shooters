@@ -16,7 +16,6 @@ public class Hold : shrimpBeat
     public void startTimer()
     {
         gameStartTime = Time.time;
-        print(Time.time);
         active = true;
     }
     
